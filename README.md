@@ -3,7 +3,7 @@ Coming soon...
 
 Expected tech-stack (tentative):
 
-Front-end:
+Front-end includes...
 HTML
 CSS/Tailwind CSS
 JavaScript
