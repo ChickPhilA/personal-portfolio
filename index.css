@@ -1,0 +1,21 @@
+body {
+    margin: 0 /* removes all margin on the webpage */
+    text-align: center;
+}
+
+.navbar {
+    margin: 0;
+    padding: 15px;
+
+    display: flex;
+    background-color: purple;
+}
+
+
+.footer {
+    background-color: skyblue;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px
+    color: #6c757d;
+}
