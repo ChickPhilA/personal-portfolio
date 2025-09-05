@@ -1,16 +1,25 @@
 body {
-    margin: 0 /* removes all margin on the webpage */
+    margin: 0;
     text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #ffbe64;
 }
 
 .navbar {
     margin: 0;
     padding: 15px;
-
+    font-family: Arial, sans-serif;
 
     display: flex;
     justify-content: flex-end;
-    gap: 12px;
+    gap: 55px;
     background-color: purple;
 }
 
@@ -19,6 +28,6 @@ body {
     background-color: skyblue;
     padding: 20px;
     text-align: center;
-    font-size: 14px
+    font-size: 25px;
     color: #6c757d;
 }
