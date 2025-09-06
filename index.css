@@ -23,6 +23,11 @@ a:hover {
     background-color: purple;
 }
 
+#dark-mode {
+    border-radius: 12px;
+    width: 40px;
+}
+
 
 .footer {
     background-color: skyblue;
