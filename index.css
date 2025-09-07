@@ -15,7 +15,7 @@ a:hover {
 .navbar {
     margin: 0;
     padding: 15px;
-    font-family: Arial, sans-serif;
+    font-family: 'Viga', sans-serif;
 
     display: flex;
     justify-content: flex-end;
