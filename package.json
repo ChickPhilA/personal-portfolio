@@ -1,0 +1,29 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "This is a personal portfolio that showcases details about me, my educational journey, projects and skills, as well as extra (fun) facts about me. Initially built with HTML, CSS, and JavaScript but new technologies, frameworks, etc. will be integrated over time. Thanks for reading!",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChickPhilA/personal-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChickPhilA/personal-portfolio/issues"
+  },
+  "homepage": "https://github.com/ChickPhilA/personal-portfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.14",
+    "vite": "^7.1.12"
+  }
+}
