@@ -3,22 +3,43 @@
     <meta charset="utf-8">
     <head>
         <title> Phillipe Manio - About Me </title>
-        <link rel="stylesheet" href="/src/styles/main.css"/>
-        <link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet'>
+        <!-- compiled Tailwind first, then your overrides -->
+      <link rel="stylesheet" href="src/output.css">
+      <link rel="stylesheet" href="src/styles/main.css">
+
+      <!-- CSS Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+      <script src="script.js" defer></script>
     </head>
 
 
-    <body>
-        <div class="navbar"> 
+    <body class="flex flex-col min-h-screen">
+        <div class="font-viga bg-orange-400 m-0 p-3.5 flex justify-end gap-6">
             <a href="index.html"> Home </a>
             <a href="about.html"> About </a>
             <a href="projects.html"> Projects </a>
             <a href="contact.html"> Contact </a>
             <a href="misc.html"> Misc. </a>
-            <button id="dark-mode">☀️</button>
+            <button type="button" aria-label="Toggle color mode" class="bg-gray-300 w-10 rounded-2xl">☀️</button>
         </div>
-        
-        <h6 class="footer"> Copyright 2025 Phillipe Manio </h6>
+
+        <main aria-label="Main content of the contact page">
+            <!-- Main content about me will go in this container. -->
+             <div class="font-press font-bold text-center uppercase m-10 text-4xl text-blue-500">
+                  About Me
+              </div>
+
+              <div class="font-viga text-black m-6 text-center text-3xl max-w-4xl mx-auto">
+                  <!-- About me content to be added here. -->
+                   So... you want to know more about me?
+              </div>
+        </main>
+
+        <footer class="font-viga bottom-0 bg-blue-700 py-5 mt-auto text-center text-xl"> Copyright 2025 Phillipe Manio </h6>
     </body>
 
 </html>
