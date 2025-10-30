@@ -18,7 +18,7 @@
 
 
     <body class="flex flex-col min-h-screen">
-      <div class="font-viga bg-orange-400 m-0 p-3.5 flex justify-end gap-6">
+      <div class="fixed top-0 w-full font-viga overflow-hidden bg-orange-400 m-0 p-3.5 flex justify-end gap-6">
           <a href="index.html"> Home 🏠 </a>
           <a href="about.html"> About 🙋‍♂️ </a>
           <a href="projects.html"> Projects 🧑‍💻 </a>
@@ -27,14 +27,13 @@
           <button type="button" aria-label="Toggle color mode" class="bg-gray-300 w-10 rounded-2xl">☀️</button>
       </div>
 
-        <main aria-label="Main content of the contact page">
+        <main class="mt-14 flex-1" aria-label="Main content of the contact page">
             <!-- Main content about me will go in this container. -->
-             <div class="font-press font-bold text-center uppercase m-10 text-4xl text-blue-500">
+            <div class="font-press font-bold text-center uppercase m-10 text-4xl text-blue-500">
                   About Me
-              </div>
+            </div>
 
-              <div class="font-viga text-black m-6 text-center text-3xl max-w-4xl mx-auto">
-                  <!-- About me content to be added here. -->
+            <div class="font-viga text-black m-6 text-center text-3xl max-w-4xl mx-auto">
                    So... you want to know more about me?
                    <br><br>
                    This is me.
@@ -44,11 +43,38 @@
                         <img src="src/images/about_img2.jpg" class="w-1/3 aspect-auto rounded-2xl object-cover overflow-hidden" alt="A picture of me (Phillipe) smiling for a photo at Balboa Park in San Diego.">
                         <img src="src/images/about_img3.jpg" class="w-1/3 aspect-auto rounded-2xl object-cover overflow-hidden" alt="A photo of me standing in the middle of Aldrich Park at UC Irvine.">
                    </div>
-              </div>
+            </div>
 
-              <div class="font-viga text-black text-2xl m-6 max-w-4xl mx-auto">
-                
-              </div>
+            <!-- Introduction/Personal Background section -->
+            <section class="flex flex-col font-viga text-black text-2xl m-6 max-w-full mx-auto border-2 border-black">
+                <h2 class="font-viga text-blue-500 px-6 mt-5 underline"> Personal Background </h2>
+
+                <!--                     My name is Phillipe (pronounced "fee-LEEP") or you can call me Phil. I am a Southern California native, born and raised around Los Angeles as well as Orange County, and currently residing in the Inland Empire. -->
+                <div class="flex flex-row justify-between py-3.5 m-6">
+                    <!-- a description here goes here -->
+                    <div class="w-2/3 pr-4">
+                        My name is Phillipe (pronounced "fil-LEP") or you can call me Phil. I am a Southern California native, born and raised around Los Angeles as well as Orange County, and currently residing in the Inland Empire.
+                        I am of Filipino heritage and am prideful to be part of such a vibrant and diverse community.
+                        <br><br>
+                        I believe my family helped me foster an early interest in technology. My interest in Computer Science and software engineering first started when I was only 4-years old. My father works in IT, so I was able to get my hands on a computer at an early age,
+                        and my older sister owned a Nintendo Gamecube.
+                        <br><br>
+                        One of my sister's games was <i>Super Monkey Ball</i> and I was fascinated by the game's mechanics. Just the idea alone that pushing your joystick up, communicates an input that
+                        causes the monkey to roll forward in a ball on my TV screen was mind-blowing to me as a kid. Just like that, I was hooked on technology and computers.
+                    </div>
+                    <!-- an image goes here -->
+                    <div class="flex flex-col w-1/3 p-5 pt-0"> 
+                        <img src="https://lacounty.gov/wp-content/uploads/2022/03/shutterstock_1418018357-scaled.jpg" class="rounded-md">
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Educational Background section -->
+            <section>
+
+            </section>
+
         </main>
 
         <footer class="font-viga bottom-0 bg-blue-700 py-5 mt-auto text-center text-xl"> Copyright 2025 Phillipe Manio </h6>
