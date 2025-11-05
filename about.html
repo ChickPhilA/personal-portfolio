@@ -19,8 +19,8 @@
 
     <body class="flex flex-col min-h-screen">
       <div class="fixed top-0 w-full font-viga overflow-hidden bg-orange-400 m-0 p-3.5 flex justify-end gap-6">
-          <a href="index.html"> Home 🏠 </a>
-          <a href="about.html"> About 🙋‍♂️ </a>
+          <a href="index.html" class="transition ease-in-out duration-300 hover:text-blue-400"> Home 🏠 </a>
+          <a href="about.html" class="text-white"> About 🙋‍♂️ </a>
           <a href="projects.html"> Projects 🧑‍💻 </a>
           <a href="contact.html"> Contact 💬 </a>
           <a href="misc.html"> Misc. 👾 </a>
@@ -38,11 +38,16 @@
                    <br><br>
                    This is me.
                    <div class ="flex flex-row justify-around gap-9 m-6"> 
-                        <!-- there will be three images here -->
-                        <img src="src/images/about_img1.jpg" class="w-1/3 aspect-auto rounded-2xl object-cover overflow-hidden" alt="A picture of me (Phillipe) taking a selfie at the beach, with the ocean in the background.">
-                        <img src="src/images/about_img2.jpg" class="w-1/3 aspect-auto rounded-2xl object-cover overflow-hidden" alt="A picture of me (Phillipe) smiling for a photo at Balboa Park in San Diego.">
-                        <img src="src/images/about_img3.jpg" class="w-1/3 aspect-auto rounded-2xl object-cover overflow-hidden" alt="A photo of me standing in the middle of Aldrich Park at UC Irvine.">
-                   </div>
+  <div class="w-1/3 p-1">
+    <img src="src/images/about_img1.jpg" class="w-full h-auto rounded-2xl" alt="A picture of me (Phillipe) taking a selfie at the beach, with the ocean in the background.">
+  </div>
+  <div class="w-1/3 p-1">
+    <img src="src/images/about_img2.jpg" class="w-full h-auto rounded-2xl" alt="A picture of me (Phillipe) smiling for a photo at Balboa Park in San Diego.">
+  </div>
+  <div class="w-1/3 p-1">
+    <img src="src/images/about_img3.jpg" class="w-full h-auto rounded-2xl" alt="A photo of me standing in the middle of Aldrich Park at UC Irvine.">
+  </div>
+</div>
             </div>
 
             <!-- Introduction/Personal Background section -->
@@ -75,7 +80,7 @@
             <section class="flex flex-col font-viga text-2xl m-6 max-w-full mx-auto">
                 <h2 class="font-viga text-right text-blue-500 px-6 mt-5"> <span class="underline">Education</span> 🎓 </h2> 
                 <div class="flex flex-col mt-4" aria-label="Container for educational background content">
-                    <div class="flex flex-row bg-blue-700 text-white mx-4 mb-3 p-5 rounded-lg justify-between gap-10">
+                    <div class="flex flex-row bg-blue-700 text-white mx-4 mb-8 p-5 rounded-lg justify-between gap-10">
                         <div class="flex flex-col justify-center">
                             <h3 class="font-bold text-2xl"> University of California, Irvine </h3>
                             <h4 class="font-semibold text-base"> Bachelor of Science, Computer Science </h4>
@@ -96,17 +101,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-row justify-between gap-7">
-                        <div class="flex flex-col w-2/5 p-5 pt-0"> 
-                            <img src="src/images/uci_1.jpg" class="w-3/6 md:w-screen rounded-md" alt="A photo placeholder.">
+                    <div class="flex flex-row justify-between md:items-center gap-7">
+                        <div class="flex md:basis-1/2 ml-5 p-5 pt-0 md:h-[35rem] overflow-hidden items-center">
+                            <img src="src/images/uci_1.jpg" class="w-full h-full object-cover object-[50%_67%] rounded-xl" alt="A photo of me (second from the left) and my friends on graduation day.">
                         </div>
-                        <div class="text-left text-lg mx-5 border-2 w-4/5 border-black p-5 rounded-lg"> 
+                        <div class="text-left text-lg mb-5 mr-5 p-5 pt-0 rounded-lg md:basis-1/2 lg:w-4/5"> 
                             When I was an undergraduate at UC Irvine, I enrolled in academically rigorous and theory-heavy Computer Science courses that
-                            challenged my problem-solving skills, mental fortitude, adapatibility, and collaboration effort(s). Despite the difficulty of nature
+                            challenged my problem-solving skills, mental fortitude, adapatability, and collaboration effort(s). Despite the difficulty of nature
                             in such academia, it is no doubt that these experiences have shaped my intrigue in Software Engineering and provided me a glimpse of the industry.
                             <br><br>
                             I was also a member of <span class="text-blue-400 transition duration-300 ease-in-out hover:text-yellow-400">
-                            <a href="https://www.instagram.com/fusionatuci/?hl=en">FUSION at UCI</a></span>, a Filipinx student organization that aims to empower, connect,
+                            <a href="https://www.instagram.com/fusionatuci/?hl=en" target="_blank">FUSION at UCI</a></span>, a Filipinx student organization that aims to empower, connect,
                             and represent Filipinx students pursuing STEM in the UCI community. Through this organization, I was involved in the FUSION ICS (Information & Computer Sciences)
                             Project, where I collaborated with fellow members to develop a web application that represents the five pillars of FUSION: <i>Social Support,
                             Professionalism, Academia, Culture, and Engineering</i>. Feel free to click on the <i>Projects</i> tab to learn more about thisproject and others that I've worked on!
@@ -131,6 +136,10 @@
                             <div class="italic text-base"> Programming in C++, Data Structures & Algorithms, Discrete Mathematics, Linear Algebra & Graph Theory, Calculus I, Calculus II </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="text-center text-lg mx-[3rem]">
+                        I attended Fullerton College for two years to fufill my general education requirements and complete my lower-division Computer Science coursework. During my time
+                        at Fullerton College, I was a member of the STEM Honors Program and was able to transfer to UC Irvine with Honors Certification. As they say, "Once a Hornet, always a Hornet!" 🐝
                     </div>
                 </div>
             </section>
