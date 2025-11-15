@@ -19,29 +19,45 @@
 
 
     <body class="flex flex-col min-h-screen">
-      <div class="font-viga bg-orange-400 m-0 p-3.5 flex justify-end gap-6">
-          <a href="index.html"> Home 🏠 </a>
-          <a href="about.html"> About 🙋‍♂️ </a>
-          <a href="projects.html"> Projects 🧑‍💻 </a>
-          <a href="contact.html"> Contact 💬 </a>
-          <a href="misc.html"> Misc. 👾 </a>
+      <nav class="font-viga bg-orange-400 m-0 p-3.5 flex justify-end gap-6">
+          <a href="index.html" class="transition ease-in-out duration-300 hover:text-blue-400"> Home 🏠 </a>
+          <a href="about.html" class="transition ease-in-out duration-300 hover:text-blue-400"> About 🙋‍♂️ </a>
+          <a href="projects.html" class="text-white"> Projects 🧑‍💻 </a>
+          <a href="contact.html" class="transition ease-in-out duration-300 hover:text-blue-400"> Contact 💬 </a>
+          <a href="misc.html" class="transition ease-in-out duration-300 hover:text-blue-400"> Misc. 👾 </a>
           <button type="button" aria-label="Toggle color mode" class="bg-gray-300 w-10 rounded-2xl">☀️</button>
-      </div>
+      </nav>
 
         <main aria-label="Main content of the contact page">
             <div class="font-press font-bold text-center uppercase m-10 text-4xl text-blue-500">
                 My Projects & Works
             </div>
-
             <div class="font-viga text-black m-6 text-center text-2xl max-w-4xl mx-auto">
                 <!-- Projects content to be added here. -->
                 One of my philosophies is that project development in software engineering is an art; to fufill the purpose of solidifying a programmer's skill as well as enhancing problrem-solving strategics.
                 <br><br>Here you can find some of my past and ongoing projects that I've worked on. Hover over a card to read a description, as well as my involvement in these projects!
             </div>
 
-            <section>
-                <!-- Project cards to be added here. -->
-            </section>
+            <!-- Fabflix Project Card -->
+            <article class="group font-viga flex flex-col"> <!-- article is the container of the whole card itself, containing both the front and the back -->
+                <section class="text-center text-2xl text-blue-500 bg-sky-100 border-2 border-blue-700 rounded-3xl m-auto my-32 py-2 px-4 w-[24rem] h-48px
+                transition-all duration-1000 ease-in-out hover:text-transparent hover:w-full hover:max-height" aria-label="A project card for Fabflix">
+                    Fabflix 🎬
+                </section>
+
+                <!-- <section class="flex flex-col text-black bg-white border-2 border-blue-700 rounded-3xl w-[24rem] h-48px m-auto my-16 py-2 px-4">
+                </section> -->
+            </article>
+
+            <!-- branchOut Project Card -->
+            <article>
+
+            </article>
+
+            <!-- Personal Portfolio Project Card -->
+            <article>
+
+            </article>
         </main>
 
         <footer class="font-viga bottom-0 bg-blue-700 py-5 mt-auto text-center text-xl before:content-['\00A9']"> 2025 Phillipe Manio </h6>
