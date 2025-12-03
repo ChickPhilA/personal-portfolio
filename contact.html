@@ -19,7 +19,7 @@
 
 
     <body class="flex flex-col min-h-screen">
-      <div class="font-viga bg-orange-400 m-0 p-3.5 flex justify-end gap-6">
+      <div class="fixed top-0 w-full font-viga bg-orange-400 m-0 p-3.5 flex justify-end gap-6">
           <a href="index.html" class="transition ease-in-out duration-300 hover:text-blue-500"> Home 🏠 </a>
           <a href="about.html" class="transition ease-in-out duration-300 hover:text-blue-500"> About 🙋‍♂️ </a>
           <a href="projects.html" class="transition ease-in-out duration-300 hover:text-blue-500"> Projects 🧑‍💻 </a>
@@ -28,7 +28,7 @@
           <button type="button" aria-label="Toggle color mode" class="bg-gray-300 w-10 rounded-2xl">☀️</button>
       </div>
 
-        <main aria-label="Main content of the contact page">
+        <main class="mt-14 flex-1" aria-label="Main content of the contact page">
             <div class="font-press font-bold text-center uppercase m-10 text-4xl text-blue-500">
                 Contact Me
             </div>
@@ -42,9 +42,21 @@
 
             <section>
                 <!-- Contact methods and form to be added here. -->
-                <div class="font-viga m-6 text-center text-xl">
-                    Testing!
+                <div class="font-viga flex flex-row justify-around flex-1 px-10 py-10 rounded-2xl m-6 mx-auto max-w-4xl">
+                    <a href="https://www.linkedin.com/in/maniophillipe/" target="_blank" rel="noopener noreferrer">
+                        <img src="src/images/LI-Logo.png" class="max-w-[500px] w-auto max-h-[105px] h-auto grayscale transition
+                        ease-in-out duration-300 hover:grayscale-0 hover:scale-75" alt="LinkedIn Logo">
+                    </a>
+
+                    <a href="https://www.github.com/ChickPhilA" target="_blank" rel="noopener noreferrer">
+                        <img src="src/images/github-mark.png" class="max-w[500px] w-auto max-h-[105px] h-auto grayscale transition
+                        ease-in-out hover:animate-spin" alt="GitHub Logo">
+                    </a>
                 </div>
+            </section>
+
+            <section aria-label="Contact form section that directs to my email.">
+                
             </section>
         </main>
 
