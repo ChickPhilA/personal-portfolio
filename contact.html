@@ -14,17 +14,17 @@
       <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-      <script src="script.js" defer></script>
+      <script src="src/js/script.js" defer></script>
     </head>
 
 
     <body class="flex flex-col min-h-screen">
-      <div class="fixed top-0 w-full font-viga bg-orange-400 m-0 p-3.5 flex justify-end gap-6">
+      <div class="fixed top-0 w-full font-viga bg-orange-400 m-0 p-3.5 z-10 flex justify-end gap-6">
           <a href="index.html" class="transition ease-in-out duration-300 hover:text-blue-500"> Home 🏠 </a>
           <a href="about.html" class="transition ease-in-out duration-300 hover:text-blue-500"> About 🙋‍♂️ </a>
           <a href="projects.html" class="transition ease-in-out duration-300 hover:text-blue-500"> Projects 🧑‍💻 </a>
           <a href="contact.html" class="text-white"> Contact 💬 </a>
-          <a href="misc.html" class="transition ease-in-out duration-300 hover:text-blue-500"> Misc. 👾 </a>
+          <a href="misc.html" class="transtion ease-in-out duration-300 hover:text-blue-500"> Misc. 👾 </a>
           <button type="button" aria-label="Toggle color mode" class="bg-gray-300 w-10 rounded-2xl">☀️</button>
       </div>
 
@@ -35,14 +35,84 @@
 
             <div class="font-viga text-black m-6 text-center text-2xl max-w-4xl mx-auto">
                 <!-- Contact content to be added here. -->
-                Feel free to reach out to me through any of the following platforms listed, or send a message through the form at the bottom.
+                I'm always open to connecting with fellow enthusiasts and professionals alike!
                 <br><br>
-                Whether it's for collaboration, inquiries, or to yap about anything or everything, I'm always open to connecting with fellow enthusiasts and professionals alike!
+                Feel free to reach out to me through the contact form below or via my professional networks.
             </div>
 
-            <section>
+            <section class="font-viga mt-20" aria-label="Contact form section that directs to my email.">
+                <form action="https://formspree.io/f/mzzngoly" method="POST" id="contact-form" class="flex flex-col items-center w-full p-10 pt-0 mt-2.5 mx-auto bg-orange-200 rounded-2xl">
+                    <h2 class="text-[45px] my-2 text-blue-500 text-center">
+                        <span class="underline">Contact Form</span> 📩
+                    </h2>
+
+                    <p class="text-xl text-center"> If you would like to send a message regarding any professional inquiries or opportunities, please fill out the following form. <br>
+                    Expect a response within 24-48 hours. I look forward to hearing from you!</p>
+
+                    <br>
+
+                    <article aria-label="Internal structure of the contact form.">
+                        <section aria-label="First and last name input">
+                            <label for="name" class="text-2xl mx-auto">Name (first and last):<span class="text-red-500">*</span>
+                            </label>
+                            <br>
+                            <input type="text" size="50" id="name" name="name" placeholder="Johnny Appleseed" class="p-2 rounded-xl shadow-sm focus:shadow-lg" required>
+                        </section>
+
+                        <br><br>
+
+                        <section aria-label="Email address input">
+                            <label for="email" class="text-2xl mt-5">
+                                Email Address:<span class="text-red-500">*</span>
+                            </label>
+                            <br>
+                            <input type="email" size="50" id="email" name="email" placeholder="jappleseed@gmail.com" class="p-2 rounded-xl shadow-sm focus:shadow-lg" required>
+                        </section>
+
+                        <br><br>
+
+                        <section aria-label="Phone number input">
+                            <label for="phone" class="text-2xl mt-5">Phone number: </label>
+                            <br>
+                            <input type="tel" size="50" id="phone" name="phone" placeholder="(123) 456-7890" class="p-2 rounded-xl shadow-sm focus:shadow-lg">
+                        </section>
+                        
+                        <br><br>
+
+                        <section aria-label="LinkedIn URL input">
+                            <label for="linkedin" class="text-2xl mt-5">LinkedIn Profile URL: </label>
+                            <br>
+                            <input type="url" size="50" id="linkedin" name="linkedin" placeholder="https://www.linkedin.com/in/yourprofile" class="p-2 rounded-xl
+                            shadow-sm focus:shadow-lg">
+                        </section>
+
+                        <br><br>
+
+                        <section aria-label="Message input">
+                            <label for="msg" class="text-2xl mt-5">
+                                Message:<span class="text-red-500">*</span>
+                            </label>
+                            <br>
+                            <textarea type="text" id="msg" name="msg" rows="10" cols="50" required class="rounded-xl shadow-sm focus:shadow-lg"> </textarea>
+                        </section>
+
+                        <section aria-label="Submit button">
+                            <button type="submit" id="form-submit" class="mt-10 bg-blue-500 text-white font-bold py-2 px-4 w-full rounded-full
+                            hover:bg-blue-700 transition-all ease-in-out duration-300 shadow-sm hover:shadow-lg active:scale-95">
+                                Send Message
+                            </button>
+                        </section>
+                    </article>
+                    <p id="form-status" class="mt-4 text-md"> </p>
+                </form>
+            </section>
+
+            <section class="font-viga bg-sky-100 pt-5" aria-label="Section where visitors can find my professional networks.">
                 <!-- Contact methods and form to be added here. -->
-                <div class="font-viga flex flex-row justify-around flex-1 px-10 py-10 rounded-2xl m-6 mx-auto max-w-4xl">
+                <h2 class="text-[45px] text-blue-500 text-center">
+                    <span class="underline">Professional Networks</span> 🤝
+                </h2>
+                <article class="flex flex-row justify-center gap-x-20 flex-1 px-10 py-10 rounded-2xl mx-auto w-full">
                     <a href="https://www.linkedin.com/in/maniophillipe/" target="_blank" rel="noopener noreferrer">
                         <img src="src/images/LI-Logo.png" class="max-w-[500px] w-auto max-h-[105px] h-auto grayscale transition
                         ease-in-out duration-300 hover:grayscale-0 hover:scale-75" alt="LinkedIn Logo">
@@ -52,12 +122,9 @@
                         <img src="src/images/github-mark.png" class="max-w[500px] w-auto max-h-[105px] h-auto grayscale transition
                         ease-in-out hover:animate-spin" alt="GitHub Logo">
                     </a>
-                </div>
+                </article>
             </section>
 
-            <section aria-label="Contact form section that directs to my email.">
-                
-            </section>
         </main>
 
         <footer class="font-viga bottom-0 bg-blue-700 py-5 mt-auto text-center text-xl before:content-['\00A9']"> 2025 Phillipe Manio </h6>
