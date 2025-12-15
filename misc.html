@@ -19,7 +19,7 @@
 
 
     <body class="flex flex-col min-h-screen">
-        <nav class="font-viga bg-orange-400 m-0 p-3.5 flex justify-end gap-6">
+        <nav class="fixed top-0 w-full font-viga bg-orange-400 m-0 p-3.5 flex justify-end gap-6">
           <a href="index.html" class="transition ease-in-out duration-300 hover:text-blue-500"> Home 🏠 </a>
           <a href="about.html" class="transition ease-in-out duration-300 hover:text-blue-500"> About 🙋‍♂️ </a>
           <a href="projects.html" class="transition ease-in-out duration-300 hover:text-blue-500"> Projects 🧑‍💻 </a>
@@ -28,14 +28,93 @@
           <button type="button" aria-label="Toggle color mode" class="bg-gray-300 w-10 rounded-2xl">☀️</button>
         </nav>
 
-        <main aria-label="Main content of the contact page">
+        <main class="font-viga mt-14" aria-label="Main content of the contact page">
             <div class="font-press font-bold text-center uppercase m-10 text-4xl text-blue-500">
                 Miscellaneous Info
             </div>
 
-            <div class="font-viga text-black m-6 text-center text-3xl max-w-4xl mx-auto">
+            <div class=" text-black m-6 text-center text-3xl max-w-4xl mx-auto">
                 <!-- Miscellaneous content to be added here. -->
                 As I love to overshare and yap about myself, get to learn more about me when I'm away from the keyboard.
+            </div>
+
+            <article class="bg-sky-200 py-6">
+                <h2 class="text-4xl text-center"> <span class="underline">Music</span> 🎵 </h2>
+                <section class="text-lg text-center my-4"> I love music, and I believe music is a universal language that can be shared among everyone.
+                    <br>
+                    My <span class="text-red-600">music taste</span> is very dynamic, ranging from indie to pop to rap to video game soundtracks. I also have a spot for K-R&B, J-Pop, and J-Rock.
+                </section>
+
+                <section class="flex flex-row">
+                    <div class="border-4 border-y-8 p-8">
+                        <p class="text-lg text-center"> Here is a Spotify playlist that I update frequently with songs that I love to vibe to! 🌻 </p>
+                        <iframe data-testid="embed-iframe" class="mx-auto" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0KRZcqCcON01hZy3Rzjg4l?utm_source=generator"
+                        width="788" height="650" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+
+                    <div class="flex flex-col w-full">
+                        <!-- Favorite Artists List -->
+                        <div class="border-4 border-t-8 p-8">
+                            <p class="text-center text-lg"> I have a lot of favorite artists, but here are my top 5! </p>
+                            <p class="text-center text-lg underline"> Hover over and click on them below to check out their Spotify pages: </p>
+                            <ul class="list-disc list-inside text-center text-lg mt-4">
+                                <li class="list-none"> 
+                                    <a href="https://open.spotify.com/artist/0ubGY2CcC0tvR0eE6hJaT8?si=6RLlMRv1TfKAnIAyiQw8tw" target="_blank"
+                                    rel="noopener noreferrer" class="transition-all ease-in-out duration-300 hover:text-[#CC5500]">Charlie Burg</a>
+                                </li>
+
+                                <li class="list-none">
+                                    <a href="https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF?si=eN-xms1kQx2Pj1yi9MwrJg" target="_blank"
+                                    rel="noopener noreferrer" class="transition-all ease-in-out duration-300 hover:text-[#eea4bb]">Tyler, The Creator</a>
+                                </li>
+
+                                <li class="list-none">
+                                    <a href="https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx?si=BHc1aPlpQ7SMMFeS8RfPcg" target="_blank"
+                                    rel="noopener noreferrer" class="transition-all ease-in-out duration-300 hover:text-[#892b30]">The Marías</a>
+                                </li>
+                                <li class="list-none">
+                                    <a href="https://open.spotify.com/artist/5069JTmv5ZDyPeZaCCXiCg?si=a86775d0e677411d" target="_blank"
+                                    rel="noopener noreferrer" class="transition-all ease-in-out duration-300 hover:text-white">wave to earth</a>
+                                </li>
+                                <li class="list-none">
+                                    <a href="https://open.spotify.com/artist/73BLwSX6gsNeVzS7DgI4xe?si=e3d82e0d218144de" target="_blank"
+                                    rel="noopener noreferrer" class="transition-all ease-in-out duration-300 hover:text-[#fcf8a6]">grentperez</a>
+                                </li>
+                        </div>
+
+                        <!-- Favorite Songs List -->
+                        <div class="border-4 border-y-8 p-8">
+                            <p class="text-center text-lg"> Here are my top 3 favorite songs at the moment! </p>
+                            <ul class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+                                                            <li>
+                                                                  <a href="https://open.spotify.com/track/0fryJLsLtbLZ4MfF0S3230?si=62dac1f31bcf49ce" target="_blank" rel="noopener noreferrer"
+                                                                         class="block cursor-pointer" aria-label="Channel Orange In Your Living Room by Charlie Burg (opens in new tab)">
+                                                                     <img src="src/images/coiylr.jpeg" alt="Cover for Channel Orange In Your Living Room" class="w-full rounded-2xl cursor-pointer"/>
+                                  <div class="mt-2 text-center text-orange-600 transition-all ease-in-out duration-300 
+                                  hover:text-black">Channel Orange In Your Living Room - Charlie Burg</div>
+                                </a>
+                              </li>
+                                                            <li>
+                                                                  <a href="https://open.spotify.com/track/7h2nmmoWDi2UpfYKLKWLYB?si=200155d56cc54f50" target="_blank" rel="noopener noreferrer"
+                                                                         class="block cursor-pointer" aria-label="Sunflower by Rex Orange County (opens in new tab)">
+                                                                     <img src="src/images/sunflower.jpeg" alt="Cover for Sunflower" class="w-full rounded-2xl cursor-pointer"/>
+                                  <div class="mt-2 text-center text-[#FAE033] transition-all ease-in-out duration-300 
+                                  hover:text-black">Sunflower — Rex Orange County</div>
+                                </a>
+                              </li>
+                                                            <li>
+                                                                  <a href="https://open.spotify.com/track/4f8Mh5wuWHOsfXtzjrJB3t?si=e4de44af20914e26" target="_blank" rel="noopener noreferrer"
+                                                                         class="block cursor-pointer" aria-label="I THINK by Tyler, The Creator (opens in new tab)">
+                                                                     <img src="src/images/igor.jpg" alt="Cover for IGOR (album)" class="w-full rounded-2xl cursor-pointer"/>
+                                  <div class="mt-2 text-center text-[#eea4bb] transition-all ease-in-out duration-300 
+                                  hover:text-black">I THINK - Tyler, The Creator</div>
+                                </a>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </article>
         </main>
 
         <footer class="font-viga bottom-0 bg-blue-700 py-5 mt-auto text-center text-xl before:content-['\00A9']"> 2025 Phillipe Manio </h6>
