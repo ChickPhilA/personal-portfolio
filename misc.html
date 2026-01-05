@@ -48,15 +48,18 @@
                 </section>
 
                 <section class="flex flex-row bg-sky-500">
-                    <div class="border-4 border-y-8 p-8">
+                    <div class="border-4 border-y-8 border-sky-500 p-8">
                         <p class="text-lg text-center"> Here is a Spotify playlist that I update frequently with songs that I love to vibe to! 🌻 </p>
                         <iframe data-testid="embed-iframe" class="mx-auto" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0KRZcqCcON01hZy3Rzjg4l?utm_source=generator"
                         width="788" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                        <p class="text-center mt-4">If the embed playlist above does not load, please click
+                            <span class="font-bold"><a href="https://open.spotify.com/playlist/0KRZcqCcON01hZy3Rzjg4l?si=6RLlMRv1TfKAnIAyiQw8tw" target="_blank" rel="noopener noreferrer">here</a></span>.
                     </div>
 
                     <div class="flex flex-col w-full">
                         <!-- Favorite Artists List -->
-                        <div class="border-4 border-t-8 p-8">
+                        <div class="border-4 border-t-8 border-sky-500 p-8">
                             <p class="text-center text-lg"> I have a lot of favorite artists, but here are my top 5! </p>
                             <p class="text-center text-lg underline"> Hover over and click on them below to check out their Spotify pages: </p>
                             <ul class="list-disc list-inside text-center text-lg mt-4">
@@ -85,7 +88,7 @@
                         </div>
 
                         <!-- Favorite Songs List -->
-                        <div class="border-4 border-y-8 p-8">
+                        <div class="border-4 border-y-8 border-sky-500 p-8 pb-16">
                             <p class="text-center text-lg"> Here are my top 3 favorite songs at the moment! </p>
                             <ul class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
                                                             <li>
@@ -140,39 +143,236 @@
                             <div class="text-2xl text-center mb-2 underline text-black"> Favorite Coffee & Matcha Shops </div>
 
                             <div class="grid grid-cols-2 bg-[#ECDEC9]">
+                                <div class="border-4 border-black pt-4">
+                                    <span class="text-2xl text-[#EFBF04]">1: Stereoscope Coffee 🥇 </span>
+                                    <p class="text-md text-center text-black">100 Bayview Cir Suite 1200, Newport Beach, CA 92660</p>
+
+                                    <article class="grid grid-cols-3 gap-2 px-3" aria-text="Images of Stereoscope.">
+                                        <img src="src/images/stereoscope.jpg" class="w-[251px] h-[397px] mx-auto rounded-xl">
+                                        <img src="src/images/stereoscope2.jpg" class="h-[397px] mx-auto rounded-xl">
+                                        <img src="src/images/stereoscope3.jpg" class="w-[251px] h-[397px] mx-auto rounded-xl">
+                                    </article>
+
+                                    <h6 class="text-center text-black text-sm mt-3">Photo 1 and 2 are taken by Benny Chan. Photo 3 is taken by me. </h6>
+
+                                    <div class="text-black bg-slate-200 px-4 border-4 border-sky-200 ml-8 md:ml-16 my-4 max-w-3xl">
+                                        <p class="mt-2"> <span class="underline">Notes</span>: </p>
+                                        <ul class="list-none">
+                                            <li class="flex items-start gap-x-1">
+                                                <span class="text-gray-500">•</span>
+                                                <span class="text-[#74A12E]">TRADITIONALLY STRONG, robust, and rich ceremonial matcha.</span>
+                                            </li>
+
+                                            <li class="flex items-start gap-x-1">
+                                                <span class="text-gray-500">•</span>
+                                                <span>You can choose three levels of matcha to see how strong you would like yours!</span>
+                                            </li>
+
+
+                                            <li class="flex items-start gap-x-1">
+                                                <span class="text-gray-500">•</span>
+                                                <span>They do validate parking for you; all you gotta do is just ask!</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="border-4 border-black pt-4">
+                                    <span class="text-2xl text-[#C4C4C4]">2: Da Vien Coffee 🥈</span>
+                                    <p class="text-md text-center text-black">9731 Bolsa Ave, Westminster, CA 92683</p>
+
+                                    <article class="grid grid-cols-2 gap-2 px-3 pl-16" aria-label="Images of Da Vien Coffee.">
+                                        <img src="src/images/da_vien1.jpg" class="self-center mx-auto rounded-xl">
+                                        <img src="src/images/da_vien2.jpg" class="w-2/3 h-[292px] object-cover mx-auto rounded-xl">
+                                    </article>
+
+                                    <h6 class="text-center text-black text-sm mt-3">Both of these photos were taken by me. On the left, features a view of the interior of their cafe,
+                                        <br>while on the right, I am holding a cup of their iconic Da Vien Coffee in my hand.
+                                    </h6>
+
+                                    <div class="text-black bg-slate-200 px-4 border-4 border-sky-200 ml-8 md:ml-16 my-4 max-w-3xl">
+                                        <p class="mt-2"> <span class="underline">Notes</span>: </p>
+                                        <ul>
+                                            <li class="flex items-start gap-x-1 mb-2">
+                                                <span class="text-gray-500">•</span>
+                                                <span class="text-left">Objectively, the best Vietnamese coffee place out there in Southern California. </span>
+                                            </li>
+
+                                            <li class="flex items-start gap-x-1 mb-2">
+                                                <span class="text-gray-500">•</span>
+                                                <span class="text-left">The most popular drink is the Marble Drip, which is my favorite drink there as well. </span>
+                                            </li>
+
+
+                                            <li class="flex items-start gap-x-1">
+                                                <span class="text-gray-500">•</span>
+                                                <span class="text-left">The eponymous Da Vien Coffee, Egg Coffee, and Matcha Foam Coffee are other amazing options.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="border-4 border-black pt-4 pb-6 flex flex-col h-full">
+                                    <span class="text-2xl text-[#CE8946]">3: Taty's Specialty Coffee & Tea 🥉</span>
+                                    <p class="text-md text-center text-black">6427 Westminster Blvd., Westminster, CA 92683</p>
+                
+                                    <article class="grid grid-cols-2 gap-2 px-3" aria-label="Images of Taty's Specialty Coffee & Tea.">
+                                        <img src="src/images/taty.jpg" class="mx-auto rounded-xl">
+                                        <img src="src/images/taty2.jpg" class="mx-auto rounded-xl">
+                                    </article>
+
+                                    <h6 class="text-center text-black text-sm mt-3">Both of these photos were taken by me. On the left, features a view of the interior of their cafe,
+                                        <br>while on the right, features their iconic Double Matcha in my hand.
+                                    </h6>
+
+                                    <div class="text-black bg-slate-200 px-4 border-4 border-sky-200 mx-auto my-4 max-w-3xl mt-auto">
+                                        <p class="mt-2"> <span class="underline">Notes</span>: </p>
+                                        <ul>
+                                            <li class="flex items-start mb-2">
+                                                <span class="w-3 text-gray-500">•</span>
+                                                <span class="text-[#74A12E] text-left">Double Matcha here is probably the best thing I've ever had here, featuring a matcha tea latte with matcha cream foam on top.</span>
+                                            </li>
+
+                                            <li class="flex items-start mb-2">
+                                                <span class="w-3 text-gray-500">•</span>
+                                                <span class="text-left">They offer Vietnamese Coffee as well, in addition to snacks such as popcorn chicken and fries to fufill your cravings. </span>
+                                            </li>
+
+                                            <li class="flex items-start">
+                                                <span class="w-3 text-gray-500">•</span>
+                                                <span class="text-left">This is a location that has been TikTok famous, so expect to see many people there, including UCI students!</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="border-4 border-black pt-4 pb-6 flex flex-col h-full">
+                                    <span class="text-2xl text-black">4: Cassel Earth Coffee</span>
+                                    <p class="text-md text-center text-black">19100 Von Karman Ave #120, Irvine, CA 92612</p>
+
+                                   <article class="grid grid-cols-3 gap-2 px-3 pt-12" aria-text="Images of Cassel Earth Coffee.">
+                                        <img src="src/images/cassel_earth.jpg" class="mx-auto rounded-xl">
+                                        <img src="src/images/cassel_earth2.jpg" class="mx-auto rounded-xl">
+                                        <img src="src/images/cassel_earth3.jpg" class="mx-auto rounded-xl">
+                                    </article>
+
+
+                                    <h6 class="text-center text-black text-sm mt-3">All of these photos were taken by me. Here, features the front of their cafe, a cup of their matcha tea latte with
+                                        <br>the business complex in the background, and a hot mocha with their stunning teddy bear art.
+                                    </h6>
+
+                                    <div class="text-black bg-slate-200 px-4 border-4 border-sky-200 mx-auto my-4 max-w-3xl mt-auto">
+                                        <p class="mt-2"> <span class="underline">Notes</span>: </p>
+                                        <ul class="list-none">
+                                            <li class="flex items-start gap-x-1 mb-2">
+                                                <span class="text-gray-500">•</span>
+                                                <span class="text-left">Small Korean business coffeeshop located in a beautifully designed business complex in Irvine.
+                                                    Lots of seating and a very cozy atmosphere!
+                                                </span>
+                                            </li>
+
+                                            <li class="flex items-start gap-x-1 mb-2">
+                                                <span class="text-gray-500">•</span>
+                                                <span class="text-left">Matcha is served sweet but beautifully smooth and rich! They also do beautiful latte art, like what they did with my mocha!</span>
+                                            </li>
+
+
+                                            <li class="flex items-start gap-x-1">
+                                                <span class="text-gray-500">•</span>
+                                                <span class="text-left">Parking is also validated here (up to 1 hour max), just let them know you need a validation ticket!</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <p class="text-[20px] text-red-500 text-center mx-4 mt-4"> Cassel Earth Coffee was featured on Yelp's Top 100 Coffee Shops of 2025, 
+                                        <br> 
+                                        ranked #6 out of 100. 
+                                    </p>
+
+
+                                </div>
+
                                 <div class="border-4 border-black pt-4 pb-6">
-                                    <span class="text-[#EFBF04]">1: Stereoscope Coffee 🥇 </span>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d219406.22625170698!2d-118.09820615346908!3d33.750808086142115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdf0c22670ad7%3A0x11b231922bcfcc1c!2sStereoscope%20Coffee!5e1!3m2!1sen!2sus!4v1765995603857!5m2!1sen!2sus"
-                                    width="600" height="450" class="mx-auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <span class="text-2xl text-black">5: Sip Coffee & Goods</span>
+                                    <p class="text-md text-center text-black">11071 Warner Ave, Fountain Valley, CA 92708</p>
 
-                                    <p class="text-black mt-2"> <span class="underline">Notes</span>: </p>
+                                    <article class="grid grid-cols-2 gap-2 px-3" aria-text="Images of Sip Coffee & Goods.">
+                                        <img src="src/images/sipcoffee.jpg" class="mx-auto rounded-xl">
+                                        <img src="src/images/sipcoffee2.jpg" class="mx-auto rounded-xl">
+                                    </article>
+
+
+                                    <h6 class="text-center text-black text-sm mt-3">Both of these photos were taken by me. The left, depicts a double matcha latte
+                                        <br>with matcha foam on top along with a matcha tea latte, while the right, features the interior of their cafe.
+                                    </h6>
+
+                                    <div class="text-black bg-slate-200 px-4 border-4 border-sky-200 mx-auto my-4 max-w-3xl">
+                                        <p class="mt-2"> <span class="underline">Notes</span>: </p>
+                                        <ul class="list-none">
+                                            <li class="flex items-start gap-x-1 mb-2">
+                                                <span class="text-gray-500">•</span>
+                                                <span class="text-[#74A12E] text-left">Very smooth, mellow, and floral matcha! </span>
+                                            </li>
+
+                                            <li class="flex items-start gap-x-1 mb-2">
+                                                <span class="text-gray-500">•</span>
+                                                <span class="text-left">They provide a self-serve sweetener bottle to adjust the sweetness of your drink to your liking. Very convenient!</span>
+                                            </li>
+
+
+                                            <li class="flex items-start gap-x-1">
+                                                <span class="text-gray-500">•</span>
+                                                <span class="text-left">They also have apparel that you can purchase to show off your love for Sip Coffee & Goods
+                                                (I wish I bought a shirt here...)! </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
                                 </div>
 
                                 <div class="border-4 border-black pt-4 pb-6">
-                                    <span class="text-[#C4C4C4]">2: Da Vien Coffee 🥈</span>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238590.83074436523!2d-118.12269858409142!3d33.745123100000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd27aa7857782b%3A0x4a4f95c8ea75a9ba!2sDa%20Vien%20Coffee!5e1!3m2!1sen!2sus!4v1765997494942!5m2!1sen!2sus"
-                                    width="600" height="450" class="mx-auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-                                <div class="border-4 border-black">
-                                    <span class="text-[#CE8946]">3: Taty's Specialty Coffee & Tea 🥉</span>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727.336337552579!2d-118.02209971363051!3d33.75996796419546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd297b78210723%3A0x24ba5fd3a045ef28!2sTaty&#39;s%20Specialty%20Coffee%20%26%20Tea!5e1!3m2!1sen!2sus!4v1765997522879!5m2!1sen!2sus"
-                                    width="600" height="450" class="mx-auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-                                <div class="border-4 border-black">
-                                    <span class="text-black">4: Cassel Earth Coffee</span>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1865.6090452248077!2d-117.85860958696506!3d33.6705956503252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdf278c26cda1%3A0xb56249274fc3df57!2sCassel%20Earth%20Coffee!5e1!3m2!1sen!2sus!4v1765997614041!5m2!1sen!2sus"
-                                    width="600" height="450" class="mx-auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-                                <div class="border-4 border-black">
-                                    <span class="text-black">5: Sip Coffee & Goods</span>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3729.1849001623577!2d-117.94073221364103!3d33.71743326646608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd2783a87c4a1d%3A0xddfae0f68f732f4b!2sSip%20Coffee%20and%20Goods!5e1!3m2!1sen!2sus!4v1765997692403!5m2!1sen!2sus"
-                                    width="600" height="450" class="mx-auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <span class="text-2xl text-black">6: Tru Bru Organic Coffee</span>
+                                    <p class="text-md text-center text-black">7626 E Chapman Ave d, Orange, CA 92869</p>
 
-                                </div>
-                                <div class="border-4 border-black">
-                                    <span class="text-black">6: Tru Bru Organic Coffee</span>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.8253589141427!2d-117.77475812400851!3d33.79469993128508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcda92a115784f%3A0x76623fde67bb2a6e!2sTru%20Bru%20Coffee!5e1!3m2!1sen!2sus!4v1765997667128!5m2!1sen!2sus"
-                                    width="600" height="450" class="mx-auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <article class="grid grid-cols-4 gap-2 px-3" aria-text="Images of Tru Bru Organic Coffee.">
+                                        <div class="col-span-2">
+                                            <img src="src/images/trubru.jpg" class="mx-auto rounded-xl w-full h-72 object-cover">
+                                        </div>
+
+                                        <div class="col-span-2">
+                                            <img src="src/images/trubru2.jpg" class="mx-auto rounded-xl w-full h-72 object-cover">
+                                        </div>
+
+                                        <div class="col-start-2 col-span-2 flex justify-center">
+                                            <img src="src/images/trubru3.jpg" class="rounded-xl w-full h-72 object-cover">
+                                        </div>
+                                    </article>
+
+                                    <h6 class="text-center text-black text-sm mt-3">All of these photos were taken by me. Here, features their pastry case and ready-to-eat/drink items, 
+                                        <br>a hot mocha with an aesthetic latte art, and an inside view of their cafe.
+                                    </h6>
+
+                                    <div class="text-black bg-slate-200 px-4 border-4 border-sky-200 mx-auto my-4 max-w-3xl">
+                                        <p class="mt-2"> <span class="underline">Notes</span>: </p>
+                                        <ul class="list-none">
+                                            <li class="flex items-start gap-x-1 mb-2">
+                                                <span class="text-gray-500">•</span>
+                                                <span class="text-left">The mocha I got depicted above was delicious. Very decadent, rich, and creamy; has a huge dark chocolate profile. Feels like a hot cocoa for adults! </span>
+                                            </li>
+
+                                            <li class="flex items-start gap-x-1 mb-2">
+                                                <span class="text-gray-500">•</span>
+                                                <span class="text-left">I really like how they have a countertop space that it feels like a homey environment; feels like you're at a bar without any alcohol.
+                                                    Moderate amount of study space as well!
+                                                </span>
+                                            </li>
+
+
+                                            <li class="flex items-start gap-x-1">
+                                                <span class="text-gray-500">•</span>
+                                                <span class="text-left">If you're planning to have breakfast or brunch with family or a friend, this is definetly a great spot that I would recommend.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
                                 </div>
 
                             </div>
