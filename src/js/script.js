@@ -1,3 +1,69 @@
+// The below code is for the typing animation of the titles on the homepage
+const title = document.getElementById('title');
+if (title) {
+  const fullText = title.textContent.trim();
+  
+  // clear existing children
+  title.innerHTML = '';
+
+  // create a text node that we'll update (so we don't stomp on sibling elements)
+  const textNode = document.createTextNode('');
+  title.appendChild(textNode);
+
+  // create a blinking cursor element and append it inside the title
+  const cursor = document.createElement('span');
+  cursor.textContent = '|';
+  cursor.className = 'typing-cursor';
+  cursor.style.color = '#000000';
+  cursor.style.marginLeft = '6px';
+  cursor.style.fontWeight = '700';
+  cursor.style.display = 'inline-block';
+  cursor.style.verticalAlign = 'bottom';
+  title.appendChild(cursor);
+
+  // blink the cursor by toggling visibility
+  setInterval(() => {
+    cursor.style.visibility = (cursor.style.visibility === 'hidden') ? 'visible' : 'hidden';
+  }, 500);
+
+  let pos = 0;
+  let isDeleting = false;
+  const typingSpeed = 80; // base speed in ms
+  const deletingSpeed = 40; // faster deleting
+  const pauseAfterTyping = 1000; // pause at end before deleting
+  const pauseAfterDeleting = 400; // pause when fully deleted
+
+  function loop() {
+    if (!isDeleting) {
+      // typing forward
+      pos++;
+      textNode.nodeValue = fullText.substring(0, pos);
+
+      if (pos === fullText.length) {
+        // reached end: pause then start deleting
+        isDeleting = true;
+        setTimeout(loop, pauseAfterTyping);
+        return;
+      }
+      setTimeout(loop, typingSpeed);
+    } else {
+      // deleting
+      pos--;
+      textNode.nodeValue = fullText.substring(0, pos);
+
+      if (pos === 0) {
+        // fully deleted: pause then start typing again
+        isDeleting = false;
+        setTimeout(loop, pauseAfterDeleting);
+        return;
+      }
+      setTimeout(loop, deletingSpeed);
+    }
+  }
+
+  loop();
+}
+
 // The below code is for handling the contact form submisson via Formspree using AJAX
 
 const form = document.querySelector('#contact-form')
