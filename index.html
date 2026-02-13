@@ -20,15 +20,17 @@
     </head>
 
 
-    <body class="flex flex-col min-h-screen bg-sky-200">
-      <nav class="fixed top-0 w-full font-viga overflow-hidden bg-orange-400 m-0 p-3.5 flex justify-end gap-6">
-        <div class="pointer-events-none absolute inset-0 flex items-center justify-center text-white font-press font-bold text-2xl">PHILLIPE MANIO</div>
+    <body class="flex flex-col min-h-screen bg-sky-200 m-0">
+      <nav class="fixed top-0 w-full font-viga overflow-hidden bg-orange-400 m-0 py-3.5 px-0 sm:px-3.5 flex items-center gap-6">
+        <div class="ml-4 text-white font-press font-bold text-2xl self-center">PHIL'S DOMAIN</div>
+        <div class="ml-auto flex items-center gap-6 pr-4">
           <a href="index.html" class="text-white"> Home 🏠 </a>
-          <a href="about.html" class="transition ease-in-out duration-300 hover:text-blue-400"> About 🙋‍♂️</a>
+          <a href="resume.html" class="transition ease-in-out duration-300 hover:text-blue-400"> Resume 📄</a>
           <a href="projects.html" class="transition ease-in-out duration-300 hover:text-blue-400"> Projects 🧑‍💻</a>
+          <a href="about.html" class="transition ease-in-out duration-300 hover:text-blue-400"> About 🙋‍♂️</a>
           <a href="contact.html" class="transition ease-in-out duration-300 hover:text-blue-400"> Contact 💬</a>
-          <a href="misc.html" class="transition ease-in-out duration-300 hover:text-blue-400"> Misc. 👾</a>
-
+          <!-- <a href="misc.html" class="transition ease-in-out duration-300 hover:text-blue-400"> Misc. 👾</a> -->
+        </div>
       </nav>
       
       <main class="mt-14 flex-1" aria-label="Main content of the home page">
@@ -62,126 +64,120 @@
         <section class="my-16"> 
           <!-- Adding my skillset -->
           <h2 class="font-viga text-2xl text-black text-center"> My Skills & Technology Stack 📚 </h2>
-          <div class="grid grid-cols-6 gap-10 mx-[6rem] border-2 border-sky-600 rounded-lg p-10 m-7 bg-gray-400"> 
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 mx-6 sm:mx-10 border-2 border-sky-600 rounded-lg p-6 sm:p-10 m-7 bg-gray-400"> 
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6"> 
-              <img src="src/images/technologies/java.png" alt="Java Icon" class="w-16 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]"> 
+              <img src="src/images/technologies/java.png" alt="Java Icon" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> Java </p>
             </div>
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6"> 
-              <img src="src/images/technologies/python.png" alt="Python Icon" class="w-16 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]"> 
+              <img src="src/images/technologies/python.png" alt="Python Icon" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> Python </p>
             </div>
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6"> 
-              <img src="src/images/technologies/C++_Logo.svg.png" alt="C++ Icon" class="w-16 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]"> 
+              <img src="src/images/technologies/C++_Logo.svg.png" alt="C++ Icon" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> C++ </p>
             </div>
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6"> 
-              <img src="src/images/technologies/C_Programming_Language.png" alt="C Icon" class="w-16 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]"> 
+              <img src="src/images/technologies/C_Programming_Language.png" alt="C Icon" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> C </p>
             </div>
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6"> 
-              <img src="src/images/technologies/js.png" alt="JavaScript Icon" class="w-16 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]"> 
+              <img src="src/images/technologies/js.png" alt="JavaScript Icon" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> JavaScript </p>
             </div>
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6"> 
-              <img src="src/images/technologies/html5.png" alt="HTML Icon" class="w-16 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]"> 
+              <img src="src/images/technologies/html5.png" alt="HTML Icon" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> HTML </p>
             </div>
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6"> 
-              <img src="src/images/technologies/css3.png" alt="CSS Icon" class="w-14 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]"> 
+              <img src="src/images/technologies/css3.png" alt="CSS Icon" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> CSS </p>
             </div>
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6"> 
-              <img src="src/images/technologies/mysql.png" alt="mySQL Icon" class="w-16 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]"> 
+              <img src="src/images/technologies/mysql.png" alt="mySQL Icon" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> mySQL </p>
             </div>
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6"> 
-              <img src="src/images/technologies/postgresql.svg" alt="PostgreSQL Icon" class="w-16 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]"> 
+              <img src="src/images/technologies/postgresql.svg" alt="PostgreSQL Icon" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> PostgreSQL </p>
             </div>
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6"> 
-              <img src="src/images/technologies/react.png " alt="React Icon" class="w-16 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]"> 
+              <img src="src/images/technologies/react.png " alt="React Icon" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> React </p>
             </div>
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6"> 
-              <img src="src/images/technologies/Node.js_logo.png" alt="Node.js Icon" class="w-24 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]"> 
+              <img src="src/images/technologies/Node.js_logo.png" alt="Node.js Icon" class="w-20 h-20 sm:w-28 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> Node.js </p>
             </div>
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6"> 
-              <img src="src/images/technologies/expressjs.png" alt="Express.js Icon" class="w-24 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]"> 
+              <img src="src/images/technologies/expressjs.png" alt="Express.js Icon" class="w-20 h-20 sm:w-28 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> Express.js </p>
             </div>
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6"> 
-              <img src="src/images/technologies/tailwindcss.png" alt="Tailwind CSS Icon" class="w-24 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]"> 
+              <img src="src/images/technologies/tailwindcss.png" alt="Tailwind CSS Icon" class="w-20 h-20 sm:w-28 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> Tailwind CSS </p>
             </div>
       
-            <div class="border-[2px] border-black rounded-xl bg-white py-6"> 
-              <img src="src/images/technologies/bootstrap.png" alt="Bootstrap CSS Icon" class="w-24 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]"> 
+              <img src="src/images/technologies/bootstrap.png" alt="Bootstrap CSS Icon" class="w-20 h-20 sm:w-28 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> Bootstrap </p>
             </div>
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6">
-              <img src="src/images/technologies/git.png" alt="Git Icon" class="w-16 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]">
+              <img src="src/images/technologies/git.png" alt="Git Icon" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> Git </p>
             </div>
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6">
-              <img src="src/images/github-mark.png" alt="GitHub Icon" class="w-16 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]">
+              <img src="src/images/github-mark.png" alt="GitHub Icon" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> GitHub </p>
             </div>
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6">
-              <img src="src/images/technologies/gitlab-logo-500-rgb.png" alt="GitLab Icon" class="w-16 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]">
+              <img src="src/images/technologies/gitlab-logo-500-rgb.png" alt="GitLab Icon" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> GitLab </p>
             </div>
 
-            <div class="border-[2px] border-black rounded-xl bg-white py-6">
-              <img src="src/images/technologies/aws.png" alt="AWS Icon" class="w-24 h-16 mx-auto">
+            <div class="border-2 border-black rounded-xl bg-white py-8 px-6 flex flex-col items-center justify-center min-h-[120px]">
+              <img src="src/images/technologies/aws.png" alt="AWS Icon" class="w-20 h-20 sm:w-28 sm:h-24 mx-auto object-contain">
               <p class="text-center mt-2 font-viga"> AWS </p>
             </div>
-
           </div>
 
-
-
-        <article>
-          <!-- downloading my resume -->
-          <h2 class="font-viga text-black text-center text-[2rem] mt-16"> View or download my resume below: </h2>
-
-          <div class="flex justify-center mt-10 mb-20">
-            <div class="border-2 border-black rounded-lg bg-white w-1/2 overflow-auto shadow-sm-hidden">
-              <!-- tab header -->
-              <div class="flex items-center justify-between rounded-t-lg bg-gray-100 border-b border-black px-4 py-2">
-                <div class="flex items-center gap-3">
-                  <span class="px-3 py-1 text-sm font-viga">Resume_Manio_Phillipe.pdf</span>
-                </div>
-                <div class="flex font-viga items-center gap-4">
-                  <a href="Resume_Manio_Phillipe.pdf" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Open In A New Tab</a>
-                  <a href="Resume_Manio_Phillipe.pdf" download class="text-blue-600 hover:underline">Download</a>
-                </div>
-              </div>
-
-              <div class="w-full p-4">
-                <iframe src="Resume_Manio_Phillipe.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="750px" title="Resume viewer">
-                </iframe>
-              </div>
+          <section class="my-16">
+            <h2 class="font-viga text-2xl text-black text-center"> Quick Resources 🗂️ </h2>
+            <div class="font-viga text-lg m-6 text-center max-w-4xl mx-auto bg-gradient-to-r from-blue-100 to-sky-100 rounded-lg px-16 py-4 shadow-md">
+              Looking for a quick link to my resume, LinkedIn, or GitHub? Click the buttons below to be directed to these resources!
             </div>
-          </div>
-        </article>
+
+            <div class="flex flex-wrap justify-center gap-6 mt-10">
+              <button onclick="window.open('Resume_Manio_Phillipe.pdf', '_blank')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition-all ease-in-out duration-300 shadow-sm hover:shadow-lg active:scale-95">
+                View Resume
+              </button>
+
+              <button onclick="window.open('https://www.linkedin.com/in/maniophillipe/', '_blank')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition-all ease-in-out duration-300 shadow-sm hover:shadow-lg active:scale-95">
+                LinkedIn
+              </button>
+
+              <button onclick="window.open('https://www.github.com/ChickPhilA', '_blank')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition-all ease-in-out duration-300 shadow-sm hover:shadow-lg active:scale-95">
+                GitHub
+              </button>
+
+            </div>
+          </section> 
 
 
       </main>
